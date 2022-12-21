@@ -1,0 +1,16 @@
+/build/
+/nbproject/private/
+/dist/
+/T100000/
+/T200000/
+/T25000/
+/T50000/
+/gnuplot/
+/graphStatistics/
+/nbproject/
+/pdm-timeseriesforecasting-ce-1.0.jar
+/example2.csv
+/dataExample.csv
+/build.xml
+*~
+/lib/
