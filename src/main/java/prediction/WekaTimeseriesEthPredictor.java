@@ -330,9 +330,6 @@ public class WekaTimeseriesEthPredictor {
     Value,
     "Contract Creation","Contract Call"
     gasUsed
-     * @param fileName Nome csv che contiene i dati
-     * @param startBlock Numero blocco iniziale da caricare
-     * @param finalBlock Numero blocco finale da caricare
      * @return Un multigrafo diretto
      * @throws IOException 
      */
@@ -376,9 +373,6 @@ public class WekaTimeseriesEthPredictor {
 
     /**
      * Load Transactions and their internal calls
-     * @param fileName
-     * @param startBlock
-     * @param finalBlock
      * @return
      * @throws IOException 
      */
@@ -810,8 +804,7 @@ public class WekaTimeseriesEthPredictor {
 
     /**
      * Create the dataset
-     * @param loadGraph
-     * @return 
+     * @return
      */
     private static Instances createDataset(HashMap<Long, HashMap<String, Double>> prepareValToPredict, String uid, String[] prop) {
         //Creo dataset 
@@ -860,7 +853,6 @@ public class WekaTimeseriesEthPredictor {
      * Calcola i valori dal grafo
      * @param loadGraph
      * @param uid
-     * @param EDGE_IN_DEGREE 
      */
     private static HashMap<String, Double> prepareValToPredict(DirectedSparseMultigraph<NodeEth, Interaction> loadGraph, String uid, String[] prop) {
         HashMap<String, Double> r = new HashMap<String, Double>();
@@ -945,7 +937,6 @@ public class WekaTimeseriesEthPredictor {
      * Calcola i valori dal grafo
      * @param loadGraph
      * @param uid
-     * @param EDGE_IN_DEGREE 
      */
     private static HashMap<Long, HashMap<String, Double>> prepareValToPredict(HashMap<Long, DirectedSparseMultigraph<NodeEth, Interaction>> loadGraph, String uid, String[] prop) {
         HashMap<Long, HashMap<String, Double>> res = new HashMap<Long, HashMap<String, Double>>();

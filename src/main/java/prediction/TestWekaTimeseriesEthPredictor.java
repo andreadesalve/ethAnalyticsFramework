@@ -371,9 +371,6 @@ public class TestWekaTimeseriesEthPredictor {
     Value,
     "Contract Creation","Contract Call"
     gasUsed
-     * @param fileName Nome csv che contiene i dati
-     * @param startBlock Numero blocco iniziale da caricare
-     * @param finalBlock Numero blocco finale da caricare
      * @return Un multigrafo diretto
      * @throws IOException 
      */
@@ -417,9 +414,6 @@ public class TestWekaTimeseriesEthPredictor {
 
     /**
      * Load Transactions and their internal calls
-     * @param fileName
-     * @param startBlock
-     * @param finalBlock
      * @return
      * @throws IOException 
      */
@@ -629,7 +623,6 @@ public class TestWekaTimeseriesEthPredictor {
      * Calcola i valori dal grafo
      * @param loadGraph
      * @param uid
-     * @param EDGE_IN_DEGREE 
      */
     private static HashMap<Long, Double> prepareValToPredict(HashMap<Long, DirectedSparseMultigraph<NodeEth, Interaction>> loadGraph, String uid, int prop) {
         HashMap<Long, Double> res = new HashMap<Long, Double>();
