@@ -370,7 +370,6 @@ public class GraphProperties {
      * Calcola i valori dal grafo
      * @param loadGraph
      * @param uid
-     * @param EDGE_IN_DEGREE 
      */
     private static HashMap<Long, HashMap<String, Double>> prepareValToPredict(HashMap<Long, DirectedSparseMultigraph<NodeEth, Interaction>> loadGraph, String uid, String[] prop) {
         HashMap<Long, HashMap<String, Double>> res = new HashMap<Long, HashMap<String, Double>>();

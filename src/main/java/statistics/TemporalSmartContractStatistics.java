@@ -52,8 +52,7 @@ public class TemporalSmartContractStatistics {
     private int numberoTotaleBlocchi;
 
     /**
-     * Calcolo HITS centrality sul grafo 
-     * @param G1-G2-G3 Type of Graph
+     * Calcolo HITS centrality sul grafo
      */
     public static void main(String[] args) {
 
